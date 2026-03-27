@@ -1,5 +1,5 @@
 :root {
-    --theme: #280; /* CSS variable */
+    --theme: #280;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    font-family: "Arial";
+    font-family: Arial;
     color: var(--theme);
 }
 
@@ -19,12 +19,12 @@ h1 {
 }
 
 #marker {
-    width: 3vw; /* 3% of the viewport width */
+    width: 3vw;
     height: 3vw;
     background-color: black;
     border-radius: 50%;
-    outline: 5px solid var(--theme); /* does not affect the size */
-    border: 5px solid white; /* affects the size */
+    outline: 5px solid var(--theme);
+    border: 5px solid white;
     position: absolute;
     top: 0;
     left: 0;
@@ -40,3 +40,21 @@ h1 {
     width: 100%;
 }
 
+/* Button styling */
+#btn {
+    background-color: var(--theme);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 20px;
+    transition: all 0.3s ease;
+}
+
+/*  Hover effect */
+#btn:hover {
+    background-color: orange;
+    transform: scale(1.05);
+    cursor: pointer;
+}
