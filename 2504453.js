@@ -48,10 +48,10 @@ function showMarkerAt(top, left) {
 function showInventory(item) {
     document.getElementById("name").innerText = "Name: " + item.name;
 
-    if (item.in_store) {
-        document.getElementById("store").innerText = "In store: Yes";
+    if (item.inStock) {
+        document.getElementById("stock").innerText = "in stock: Yes";
     } else {
-        document.getElementById("store").innerText = "In store: No";
+        document.getElementById("stock").innerText = "in stock: No";
     }
 
     document.getElementById("price").innerText =
